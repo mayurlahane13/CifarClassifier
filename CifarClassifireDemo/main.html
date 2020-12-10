@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <script language="javascript" src="libraries/p5.speech.js"></script>
+  <script language="javascript" src="libraries/p5.sound.js"></script>
+  <script language="javascript" type="text/javascript" src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.5">
+  </script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+
+
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style>
+    body {
+      padding: 10;
+      margin: 0;
+      background-color: #d9ffcc;
+    }
+    canvas {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 800px;
+    }
+
+    .btn {
+      border: stroked;
+      background-color: #ffffe6;
+      padding: 14px 28px;
+      font-size: 48px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    /* On mouse-over */
+
+    .btn:hover {
+      background: #8cff66;
+    }
+
+    .success {
+      color: #000080;
+    }
+    p {
+      font-size: 48px;
+    }
+  </style>
+</head>
+
+<body>
+  <button class = "btn success" id = "predict_button">Predict</button>
+</body>
+
+</html>
